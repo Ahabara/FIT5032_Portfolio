@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prac_prescription_app", "prac_prescription_app\prac_prescription_app.csproj", "{EA1577C7-B381-438F-A2F6-E6F554E83EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1577C7-B381-438F-A2F6-E6F554E83EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1577C7-B381-438F-A2F6-E6F554E83EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1577C7-B381-438F-A2F6-E6F554E83EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1577C7-B381-438F-A2F6-E6F554E83EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60F1E4DE-9CFB-4AE5-B6F4-50986FEAE007}
+	EndGlobalSection
+EndGlobal
