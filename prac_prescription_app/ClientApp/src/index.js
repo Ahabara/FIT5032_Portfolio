@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import { ChakraProvider } from '@chakra-ui/react'
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
@@ -11,9 +12,14 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-  <BrowserRouter basename={baseUrl}>
-    <App />
-  </BrowserRouter>);
+
+
+    <ChakraProvider>
+        <BrowserRouter basename={baseUrl}>
+            <App />
+        </BrowserRouter>
+    </ChakraProvider>
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
