@@ -10,14 +10,23 @@ async function getDrug() {
     //console.log(data.results["products"]);
 }
 
-const hello = () => {
-    return "hello world"
+function toTitleCase(str) {
+    return str.replace(
+        /\w\S*/g,
+        function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
 }
 
 export function DrugInfo() {
-    getDrug()
+    const [drugName, setDrugName] = useState("No Data Found");
+    getDrug().then(data => setDrugName(data));
+
+    console.log("Hello " + drugName);
     return (
         <div>
-            <h1> Hi my name is {getDrug} </h1>
+            <input type="text" id="fname" name="fname"><br><br>
+            <h1> Hi my name is {toTitleCase(drugName)} </h1>
     </div>)
 } 
